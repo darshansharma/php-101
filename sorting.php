@@ -27,3 +27,4 @@ for ($arrIndex = 0; $arrIndex < 5; $arrIndex++) {
 for ($i = 0; $i < 5; $i++) {
     echo " $arr[$i]";
 }
+?>
