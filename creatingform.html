@@ -5,8 +5,11 @@
     <meta charset="utf-8">
     <title> simpleform </title>
 </head>
+
 <body>
-    <form>
+    <?php include 'user.php'; 
+    ?>
+    <form action="user.php">
         Name: <input type="text" name="username"> <br> <br>
         Email: <input type="Email" name="useremail"> <br> <br>
         Password:<input type="password" name="userpassword"> <br> <br>
