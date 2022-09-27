@@ -1,12 +1,12 @@
-<? php
-$name = $_REQUEST['username'];
-$email = $_REQUEST['useremail'];
-$password = $_REQUEST['userpassword'];
+<?php
+$name = $_POST["username"];
+$email = $_POST["useremail"];
+$password = $_POST["userpassword"];
 echo $name,$email,$password;
 
 $servername = "localhost";
-$username = "username";
-$password = "password";
+$username = "sanjeev123";
+$password = "sanjeev123!@#";
 $dbname = "myDB";
 
 // Create connection
