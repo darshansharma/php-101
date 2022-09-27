@@ -7,7 +7,7 @@ echo $name,$email,$password;
 $servername = "localhost";
 $username = "sanjeev123";
 $password = "sanjeev123!@#";
-$dbname = "myDB";
+$dbname = "REALFIRSTDATABASE";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -16,7 +16,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO MyGuests (firstname, lastname, email)
+$sql = "INSERT INTO CUSTOMERINFORMATION (NAME, EMAIL , PASSWORD)
 VALUES ('John', 'Doe', 'john@example.com')";
 
 if ($conn->query($sql) === TRUE) {
