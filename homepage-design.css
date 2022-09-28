@@ -1,0 +1,10 @@
+.design {
+    background-color: brown;
+    text-align: center;
+}
+
+.pdesign {
+    position: relative;
+    right: 10px;
+
+}

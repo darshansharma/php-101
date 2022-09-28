@@ -2,22 +2,22 @@
 $name = $_POST["username"];
 $email = $_POST["useremail"];
 $password = $_POST["userpassword"];
-echo $name,$email,$password;
+
 
 $servername = "localhost";
-$username = "sanjeev123";
-$password = "sanjeev123!@#";
+$dbusername = "sanjeev123";
+$dbpassword = "sanjeev123!@#";
 $dbname = "REALFIRSTDATABASE";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $dbusername, $dbpassword, $dbname);
 // Check connection
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
 $sql = "INSERT INTO CUSTOMERINFORMATION (NAME, EMAIL , PASSWORD)
-VALUES ('John', 'Doe', 'john@example.com')";
+VALUES ('".$name."', '".$email."', '".$password."');";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
@@ -26,4 +26,3 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close();
-?>

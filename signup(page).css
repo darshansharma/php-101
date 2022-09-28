@@ -1,0 +1,13 @@
+.form-content {
+    text-align: center;
+}
+
+.full-bodydesign {
+    background-color: blue;
+    text-align: center;
+}
+
+.change-position {
+    position: relative;
+    right: 10px;
+}
