@@ -6,5 +6,13 @@
 .pdesign {
     position: relative;
     right: 10px;
+}
 
+.form-division {
+    
+    border-style : dotted;
+    border-width : 10px;
+    border-color : greenyellow;
+    padding : 40px;
+    margin : 180px;
 }
