@@ -4,16 +4,21 @@
 <head>
     <meta charset="utf-8">
     <title> simpleform </title>
+    <link rel="stylesheet" href="signup(page).css">
 </head>
+<div class="full-bodydesign">
 
-<body>
-    
-    <form action="user.php">
-        Name: <input type="text" name="username"> <br> <br>
-        Email: <input type="Email" name="useremail"> <br> <br>
-        Password:<input type="password" name="userpassword"> <br> <br>
-        <input type="submit" value="CreateAccount">
-    </form>
-</body>
+    <body>
+        <h1> SIGN UP </h1>
+        <div class="form-content">
+            <form action="user.php" method="post">
+                Name: <input type="text" name="username"> <br> <br>
+                Email: <input type="Email" name="useremail"> <br> <br>
+                <div class="change-position"> Password:<input type="password" name="userpassword"></div> <br> <br>
+                <input type="submit" value="CreateAccount">
+            </form>
+        </div>
+    </body>
+</div>
 
 </html>
